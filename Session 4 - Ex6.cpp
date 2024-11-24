@@ -1,9 +1,12 @@
 #include<stdio.h>
 int main(){
 	float cost;
-	int eletricNumber;
-	printf("Nhap vao so dien ma ban da dung: ");
-	scanf("%d", &eletricNumber);
+	int eletricNumber, oldNumber, newNumber;
+	printf("Nhap vao so dien cu: ");
+	scanf("%d", &oldNumber);
+	printf("Nhap vao so dien moi: ");
+	scanf("%d", &newNumber);
+	eletricNumber = newNumber-oldNumber;
 	if (0<=eletricNumber&&eletricNumber<50){
 		cost = 10.000*eletricNumber;
 		printf("Tien dien cua ban la: %.3f", cost);
